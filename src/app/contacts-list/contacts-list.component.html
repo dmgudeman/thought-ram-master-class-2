@@ -5,7 +5,7 @@
   <md-icon color="accent">search</md-icon>
 </md-toolbar>
 <md-list>
-  <md-list-item [routerLink]="['contact', contact.id]"
+  <md-list-item [routerLink]="['/contact', contact.id]"
                 *ngFor="let contact of contacts$ | async; trackBy: trackByContacts" >
     <img md-list-avatar [src]="contact.image" alt="Picture of {{contact.name}}">
     <h3 md-line>{{contact.name}}</h3>

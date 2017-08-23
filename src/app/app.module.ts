@@ -11,10 +11,11 @@ import { APP_ROUTES} from './app.routes';
 import {HttpClientModule} from '@angular/common/http';
 import { ContactsEditorComponent } from './contacts-editor/contacts-editor.component';
 import {FormsModule} from '@angular/forms';
+import { ContactsDetailViewComponent } from './contacts-detail-view/contacts-detail-view.component';
 
 
 @NgModule({
-  declarations: [ContactsAppComponent, ContactsListComponent, ContactsDetailComponent, ContactsEditorComponent],
+  declarations: [ContactsAppComponent, ContactsListComponent, ContactsDetailComponent, ContactsEditorComponent, ContactsDetailViewComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
