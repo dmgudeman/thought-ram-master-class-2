@@ -14,7 +14,8 @@ import {FormsModule} from '@angular/forms';
 import { ContactsDetailViewComponent } from './contacts-detail-view/contacts-detail-view.component';
 import { TabComponent} from './tabs/tab/tab.component';
 import { TabsComponent} from './tabs/tabs/tabs.component';
-
+import { EventBusService} from './event-bus.service';
+import {ContactsService} from './contacts.service';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { TabsComponent} from './tabs/tabs/tabs.component';
     FormsModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
+  providers: [EventBusService, ContactsService],
   bootstrap: [ContactsAppComponent]
 })
 export class ContactsModule {

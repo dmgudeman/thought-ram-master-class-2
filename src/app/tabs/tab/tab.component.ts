@@ -11,7 +11,7 @@ export class TabComponent  {
   @Input() title: string;
   constructor() { }
 
-  show(isVisible=true) {
+  show(isVisible = true) {
     this.selected = isVisible;
   }
 
