@@ -41,9 +41,13 @@ import { AboutComponent } from './about/about.component';
   ],
   providers: [EventBusService, ContactsService,
     {
+      provide: 'API_ENDPOINT',
+      useValue: 'http://localhost:4201/api'
+    },
+    {
       provide: 'ConfirmNavigationGuard',
       useValue: doConfirm
-    }
+    },
   ],
   bootstrap: [ContactsAppComponent]
 })
