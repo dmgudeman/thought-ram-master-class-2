@@ -16,7 +16,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
   declarations: [
     AboutComponent,
-    
   ]
 })
 export class AboutModule { }
