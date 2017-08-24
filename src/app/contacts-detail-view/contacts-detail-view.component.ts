@@ -17,10 +17,16 @@ export class ContactsDetailViewComponent implements OnInit {
   id: string;
   constructor(private route: ActivatedRoute, private router: Router, private contactsService: ContactsService) { }
   ngOnInit() {
-    this.id = this.route.snapshot.params['id'];
-    this.contactsService.getContact(this.id).subscribe(contact => {
-      this.contact = contact;
-    });
+    // this.id = this.route.snapshot.params['id'];
+    // this.route.params.subscribe(params => this.id = params['id'])
+    // this.contactsService.getContact(this.id).subscribe(contact => {
+    //  this.contact = contact;
+    // });
+     this.route.params.switchMap(params => this.contactsService.getContact(params['id']))
+      .subscribe(contact => {
+        this.id = contact.id.toString();
+        this.contact = contact;
+      });
   }
 
   navigateToEditor (contact: Contact) {
