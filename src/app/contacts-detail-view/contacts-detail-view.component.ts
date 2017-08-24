@@ -22,7 +22,7 @@ export class ContactsDetailViewComponent implements OnInit {
     // this.contactsService.getContact(this.id).subscribe(contact => {
     //  this.contact = contact;
     // });
-     this.route.params.switchMap(params => this.contactsService.getContact(params['id']))
+     this.route.paramMap.switchMap(paramMap => this.contactsService.getContact(paramMap.get('id')))
       .subscribe(contact => {
         this.id = contact.id.toString();
         this.contact = contact;
