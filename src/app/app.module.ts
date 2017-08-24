@@ -5,17 +5,17 @@ import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ContactsAppComponent } from './app.component';
 import { ContactsListComponent } from './contacts-list/contacts-list.component';
-import {ContactsDetailComponent} from './contacts-detail/contacts-detail.component';
+import { ContactsDetailComponent} from './contacts-detail/contacts-detail.component';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES} from './app.routes';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { ContactsEditorComponent } from './contacts-editor/contacts-editor.component';
-import {FormsModule} from '@angular/forms';
+import { FormsModule} from '@angular/forms';
 import { ContactsDetailViewComponent } from './contacts-detail-view/contacts-detail-view.component';
 import { TabComponent} from './tabs/tab/tab.component';
 import { TabsComponent} from './tabs/tabs/tabs.component';
 import { EventBusService} from './event-bus.service';
-import {ContactsService} from './contacts.service';
+import { ContactsService} from './contacts.service';
 import { ContactsDashboardComponent } from './contacts-dashboard/contacts-dashboard.component';
 
 
