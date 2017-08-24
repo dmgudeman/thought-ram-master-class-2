@@ -17,7 +17,7 @@ import { TabsComponent} from './tabs/tabs/tabs.component';
 import { EventBusService} from './event-bus.service';
 import {ContactsService} from './contacts.service';
 import { ContactsDashboardComponent } from './contacts-dashboard/contacts-dashboard.component';
-import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { AboutComponent } from './about/about.component';
     TabComponent,
     TabsComponent,
     ContactsDashboardComponent,
-    AboutComponent],
+    ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
