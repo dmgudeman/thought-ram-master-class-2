@@ -39,9 +39,19 @@ import { AboutComponent } from './about/about.component';
     FormsModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
-  providers: [EventBusService, ContactsService],
+  providers: [EventBusService, ContactsService,
+    {
+      provide: 'ConfirmNavigationGuard',
+      useValue: doConfirm
+    }
+  ],
   bootstrap: [ContactsAppComponent]
 })
 export class ContactsModule {
 
 }
+
+export function doConfirm() {
+  return window.confirm('Navigate away without saving?');
+}
+
